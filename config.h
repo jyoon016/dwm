@@ -223,9 +223,9 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_F10,		spawn,		SHCMD("dmenuumount") },
 	{ MODKEY|ShiftMask,		XK_F11,		spawn,		SHCMD("mpv --no-cache --no-osc --no-input-default-bindings --input-conf=/dev/null --title=webcam $(ls /dev/video[0,2,4,6,8] | tail -n 1)") },
 	{ MODKEY|ShiftMask,		XK_F12,		xrdb,		{.v = NULL } },
-	{ MODKEY,			XK_F9,		spawn,		SHCMD("duolingo-desktop") },
+	{ MODKEY,			XK_F9,		spawn,		SHCMD("duo") },
 	{ MODKEY,			XK_F10,		spawn,		SHCMD("anki") },
-	{ MODKEY,			XK_F11,		spawn,		SHCMD("papago") },
+	{ MODKEY,			XK_F11,		spawn,		SHCMD("webull") },
 	{ MODKEY,			XK_F12,		spawn,		SHCMD("livenews") },
 	{ MODKEY,			XK_F8,		spawn,		SHCMD("mw sync") },
 	{ MODKEY,			XK_F9,		spawn,		SHCMD("dmenumount") },
@@ -268,8 +268,8 @@ static Key keys[] = {
 	{ 0, XF86XK_TouchpadToggle,	spawn,		SHCMD("(synclient | grep 'TouchpadOff.*1' && synclient TouchpadOff=0) || synclient TouchpadOff=1") },
 	{ 0, XF86XK_TouchpadOff,	spawn,		SHCMD("synclient TouchpadOff=1") },
 	{ 0, XF86XK_TouchpadOn,		spawn,		SHCMD("synclient TouchpadOff=0") },
-	{ 0, XF86XK_MonBrightnessUp,	spawn,		SHCMD("xbacklight -inc 15") },
-	{ 0, XF86XK_MonBrightnessDown,	spawn,		SHCMD("xbacklight -dec 15") },
+	{ 0, XF86XK_MonBrightnessUp,	spawn,		SHCMD("xbacklight -inc 5") },
+	{ 0, XF86XK_MonBrightnessDown,	spawn,		SHCMD("xbacklight -dec 5") },
 
 	/* { MODKEY|Mod4Mask,              XK_h,      incrgaps,       {.i = +1 } }, */
 	/* { MODKEY|Mod4Mask,              XK_l,      incrgaps,       {.i = -1 } }, */
