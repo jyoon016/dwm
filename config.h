@@ -224,7 +224,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_F10,		spawn,		SHCMD("dmenuumount") },
 	{ MODKEY|ShiftMask,		XK_F11,		spawn,		SHCMD("mpv --no-cache --no-osc --no-input-default-bindings --input-conf=/dev/null --title=webcam $(ls /dev/video[0,2,4,6,8] | tail -n 1)") },
 	{ MODKEY|ShiftMask,		XK_F12,		xrdb,		{.v = NULL } },
-	{ MODKEY,			XK_F9,		spawn,		SHCMD("duo") },
+	{ MODKEY,			XK_F9,		spawn,		SHCMD("babbel") },
 	{ MODKEY,			XK_F10,		spawn,		SHCMD("anki") },
 	{ MODKEY,			XK_F11,		spawn,		SHCMD("webull") },
 	{ MODKEY,			XK_F12,		spawn,		SHCMD("livenews") },
